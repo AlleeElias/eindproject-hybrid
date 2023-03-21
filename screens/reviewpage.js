@@ -1,4 +1,4 @@
-import {Text, View, StyleSheet} from "react-native";
+import {Text, View, StyleSheet, Button} from "react-native";
 import {SafeAreaView} from "react-native-safe-area-context";
 import {actions, RichEditor, RichToolbar} from "react-native-pell-rich-editor";
 import React, {useState} from "react";
@@ -32,9 +32,14 @@ export function reviewpage() {
                 <Text>Gelieve uwen mening te controleren :)</Text>
                 <HTMLView value={article}>
                 </HTMLView>
+                <Button onPress={printStuff(article)} title={'Verstuur!'}/>
             </SafeAreaView>
         </View>
     );
+}
+
+function printStuff(article) {
+    console.log(article);
 }
 
 const styles = StyleSheet.create(
