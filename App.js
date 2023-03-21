@@ -6,6 +6,8 @@ import {wikipage} from "./screens/wikipage";
 import React from "react";
 import {Button} from "react-native";
 import {videopage} from "./screens/videopage";
+import {listpage} from "./screens/listpage";
+import {reviewpage} from "./screens/reviewpage";
 
 export default function App() {
     return (
@@ -26,6 +28,8 @@ function EliApp() {
                 <Stack.Screen name={'Home'} component={homepage}/>
                 <Stack.Screen name={'Wiki'} component={wikipage}/>
                 <Stack.Screen name={'Video'} component={videopage}/>
+                <Stack.Screen name={'List'} component={listpage}/>
+                <Stack.Screen name={'Review'} component={reviewpage}/>
             </Stack.Navigator>
         </>
     );
