@@ -1,8 +1,13 @@
-import {Button, Text} from "react-native";
+import {Button, Image, StyleSheet, Text} from "react-native";
 
 export function homepage({navigation}) {
     return (<>
-        <Text>Dit is de homepagina!</Text>
+        <Text>Dit is de homepagina!
+            In deze app zal je wat leuke info vinden over het prachtige volk sneeuwbeer!
+            Enjoy ur fricking stay :)
+        </Text>
+        <Image source={require('../assets/profilepic.jpeg')}
+               style={{minHeight: 100, maxHeight: 200, minWidth: 100, maxWidth: 400}}/>
         <Button title={'Wiki'}
                 onPress={() =>
                     navigation.navigate('Wiki')
