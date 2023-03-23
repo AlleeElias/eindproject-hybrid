@@ -4,13 +4,14 @@ import {actions, RichEditor, RichToolbar} from "react-native-pell-rich-editor";
 import React, {useState} from "react";
 import HTMLView from "react-native-htmlview/HTMLView";
 
-export function reviewpage() {
+export function ReviewPage() {
     const [article, setArticle] = useState("");
     const richText = React.useRef();
 
     return (
         <View style={{height: '100%'}}>
             <SafeAreaView>
+                {/*De Richtoolbar update de state van de richeditor*/}
                 <RichToolbar style={styles.toolbar}
                              editor={richText}
                              actions={[actions.setBold, actions.setItalic, actions.setUnderline, actions.heading1, actions.undo, actions.redo,]}

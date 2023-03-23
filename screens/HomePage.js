@@ -1,6 +1,6 @@
 import {Button, Image, StyleSheet, Text} from "react-native";
 
-export function homepage({navigation}) {
+export function HomePage({navigation}) {
     return (<>
         <Text>Dit is de homepagina!
             In deze app zal je wat leuke info vinden over het prachtige volk sneeuwbeer!

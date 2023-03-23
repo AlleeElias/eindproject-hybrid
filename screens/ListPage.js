@@ -1,6 +1,6 @@
 import {Text} from "react-native";
 
-export function listpage(){
+export function ListPage(){
     return (<>
         <Text>Dit is de listpagina!</Text>
     </>);

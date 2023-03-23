@@ -1,7 +1,7 @@
 import {Text, Linking} from "react-native";
 import WebView from "react-native-webview";
 
-export function videopage() {
+export function VideoPage() {
     const uri = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 
     return (<>
