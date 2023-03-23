@@ -1,7 +1,7 @@
 import {Text} from "react-native";
+import StorybookUIRoot from "../storybook";
 
-export function wikipage(){
-    return (<>
-        <Text>Dit is de wikipagina!</Text>
-    </>);
+export function wikipage() {
+    return (<StorybookUIRoot></StorybookUIRoot>)
+        ;
 }
