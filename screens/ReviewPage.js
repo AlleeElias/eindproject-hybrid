@@ -1,8 +1,9 @@
-import {Text, View, StyleSheet, Button} from "react-native";
+import {Text, View, Button, Pressable} from "react-native";
 import {SafeAreaView} from "react-native-safe-area-context";
 import {actions, RichEditor, RichToolbar} from "react-native-pell-rich-editor";
 import React, {useState} from "react";
 import HTMLView from "react-native-htmlview/HTMLView";
+import {styles} from "../data/style";
 
 export function ReviewPage() {
     const [article, setArticle] = useState("");
@@ -30,10 +31,14 @@ export function ReviewPage() {
                         setArticle(descriptionText);
                     }}
                 />
-                <Text>Gelieve uwen mening te controleren :)</Text>
+                <View style={styles.item}>
+                    <Text style={styles.text}>Gelieve uwen mening te controleren :)</Text>
+                </View>
                 <HTMLView value={article}>
                 </HTMLView>
-                <Button onPress={printStuff(article)} title={'Verstuur!'}/>
+                <Pressable onPress={printStuff(article)} style={styles.item}>
+                    <Text style={styles.text}>Verstuur!</Text>
+                </Pressable>
             </SafeAreaView>
         </View>
     );
@@ -42,15 +47,3 @@ export function ReviewPage() {
 function printStuff(article) {
     console.log(article);
 }
-
-const styles = StyleSheet.create(
-    {
-        toolbar: {
-            height: '25%',
-            backgroundColor: 'powderblue',
-        },
-        textArea: {
-            height: '95%'
-        }
-    }
-)

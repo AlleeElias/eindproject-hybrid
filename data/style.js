@@ -24,4 +24,11 @@ export const styles = StyleSheet.create({
         fontSize: 32,
         color: '#a9a9a9',
     },
+    toolbar: {
+        height: '25%',
+        backgroundColor: 'powderblue',
+    },
+    textArea: {
+        height: '95%'
+    }
 })
